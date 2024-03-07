@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#loading_txt {
+    bottom: 5%;
+    left: 50%;
+    margin-left: -80px;
+    position: absolute;
+    
+    -webkit-animation: fadein 5s;
+    -moz-animation: fadein 5s;
+    -ms-animation: fadein 5s;
+    -o-animation: fadein 5s;
+    animation: fadein 5s;
+}
+
+p {
+    color: white;
+    font-size: 25px;
+}
+
+.text-after:after {
+    content: " ...";
+    animation: anim 2s steps(5, end) infinite;
+}
+
+@keyframes anim {
+    0%,
+    20% {
+        color: rgba(0, 0, 0, 0);
+        text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0);
+    }
+    40% {
+        color: white;
+        text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0);
+    }
+    60% {
+        text-shadow: 0.25em 0 0 white, 0.5em 0 0 rgba(0, 0, 0, 0);
+    }
+    80%,
+    100% {
+        text-shadow: 0.25em 0 0 white, 0.5em 0 0 white;
+    }
+}
