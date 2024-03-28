@@ -1,4 +1,4 @@
-<h3>Loadingscreen simple pour Fivem<h3>
+<h3>Loadingscreen simple for Fivem<h3>
 <p>Author "Yukaii"</p>
 
 <h3>Features ⚙️</h3>
